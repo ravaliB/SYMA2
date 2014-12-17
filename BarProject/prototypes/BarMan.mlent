@@ -3,7 +3,7 @@ version {
   minor: 6
   patch: 0
 }
-name: "Bob"
+name: "BarMan"
 ancestor: "prototype/Customers.mlent"
 component {
   name: "Action"
@@ -22,7 +22,7 @@ component {
   content {
     type: Knowledge
     [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
-      knowledgeFile: "knowledge/Bob.mlkb"
+      knowledgeFile: "knowledge/Barman.mlkb"
     }
   }
 }
@@ -33,7 +33,7 @@ component {
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: "decision/Bob.mlbt"
+      behavior: "decision/BarMan.mlbt"
     }
   }
 }

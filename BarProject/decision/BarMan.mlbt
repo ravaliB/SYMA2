@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{d45264fe-dd97-4427-abc7-5647250ae94d}"
+name: "BarMan"
+description: ""
+children {
+  type: Node
+  name: "9f7166c5-eb82-47dd-82c7-5116f93c500c"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "dee5010a-73e4-4e93-8ea8-38eab7c85a21"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5269
+          y: 2638
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "063b07de-4006-49a4-b528-f8e9cfca2fa2"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -68.5
+              y: 187.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

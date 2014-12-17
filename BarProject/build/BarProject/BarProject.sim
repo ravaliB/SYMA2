@@ -9,9 +9,12 @@ knowledge {
 action {
 }
 decision {
+  btFile: "decision/embedded/SelectedAction/buy_drink.bt"
+  btFile: "decision/embedded/SelectedAction/talk.bt"
   btFile: "decision/embedded/SelectAction.bt"
   btFile: "decision/embedded/SelectDestination.bt"
-  btFile: "decision/WalkingAround.bt"
+  btFile: "decision/BarMan.bt"
+  btFile: "decision/Bob.bt"
 }
 navigation {
   navmesh {
@@ -25,4 +28,7 @@ update {
 entityLibrary: "/BarProject.protos"
 initialEntity {
   prototype: "_Bob"
+}
+initialEntity {
+  prototype: "_Barman"
 }

@@ -4,9 +4,9 @@ version {
   patch: 0
 }
 resource {
-  path: "/default/BarProject/decision/embedded/SelectAction.mlbt"
+  path: "/default/BarProject/decision/embedded/SelectedAction/talk.mlbt"
   marker {
-    id: 32
+    id: 65
     type: "mlv.toolset.marker.tracepoint"
     attribute {
       key: "enabled"
@@ -14,12 +14,32 @@ resource {
     }
     attribute {
       key: "location"
-      value: "\"mlv:SelectAction.bt?nodeName=09db2609-3302-4a9c-81d3-25b78b4d1c6c&nodeType=action\""
+      value: "\"mlv:talk.bt?nodeName=bd774b71-b059-43fa-82e1-986c7f17c1e5&nodeType=action\""
     }
     attribute {
       key: "message"
-      value: "hi"
+      value: "A drink !"
     }
-    creation: "2014-12-16T16:27:46"
+    creation: ""
+  }
+}
+resource {
+  path: "/default/BarProject/decision/embedded/SelectAction.mlbt"
+  marker {
+    id: 84
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:SelectAction.bt?nodeName=3b54300a-ad43-42f7-947d-d7f8d8011418&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "GLOUGLOU"
+    }
+    creation: ""
   }
 }

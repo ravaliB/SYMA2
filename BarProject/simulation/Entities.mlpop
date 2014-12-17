@@ -21,3 +21,21 @@ entity {
   usePosition: false
   useOrientation: false
 }
+entity {
+  prototype: "prototype/BarMan.mlent"
+  id: "{0067fd6c-b291-40ca-a6b4-5013ea460013}"
+  name: "Barman"
+  position {
+    x: -40
+    y: 0
+    z: -38
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}

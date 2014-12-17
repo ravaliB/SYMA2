@@ -1,0 +1,21 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "toClient"
+    value {
+      type: Object
+      objectValue {
+        key: "accepts"
+        value {
+          type: Bool
+          boolValue: false
+        }
+      }
+    }
+  }
+}

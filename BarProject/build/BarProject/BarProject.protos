@@ -7,8 +7,44 @@
 }
 [
     {
+        "name": "BarMan",
+        "ancestor": "Customers",
+        "knowledge": {
+            "knowledge": {
+                "toClient": {
+                    "accepts": false
+                }
+            }
+        },
+        "decision": {
+            "behavior": "mlv:BarMan.bt"
+        }
+    },
+    {
         "name": "Bob",
         "ancestor": "Customers",
+        "knowledge": {
+            "knowledge": {
+                "bobDestination": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "drink": 0,
+                "isAngry": false,
+                "isAtBar": false,
+                "isDrunk": false,
+                "toBar": {
+                    "wantDrink": ""
+                }
+            }
+        },
+        "decision": {
+            "behavior": "mlv:Bob.bt"
+        }
+    },
+    {
+        "name": "Customers",
         "knowledge": {
             "knowledge": {
                 "destination": {
@@ -18,12 +54,6 @@
                 }
             }
         },
-        "decision": {
-            "behavior": "mlv:WalkingAround.bt"
-        }
-    },
-    {
-        "name": "Customers",
         "action": null,
         "navigation": {
             "behavior": "mlv:Walking.nb"
@@ -35,6 +65,20 @@
         "knowledge": {
             "knowledge": {
                 "name": "Bob"
+            }
+        }
+    },
+    {
+        "name": "_Barman",
+        "ancestor": "BarMan",
+        "knowledge": {
+            "knowledge": {
+                "name": "Barman",
+                "position": {
+                    "x": -40.0,
+                    "y": 0.0,
+                    "z": -38.0
+                }
             }
         }
     }

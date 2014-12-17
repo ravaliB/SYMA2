@@ -43,52 +43,152 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "3f39d2cc-3028-4cd4-be21-47c9f727d8eb"
+          name: "79c57778-bcca-410e-ba75-31faf2bc2145"
           presentation {
-            itemTemplate: "BTSetNode.qml"
+            itemTemplate: "BTSequenceNode.qml"
             position {
-              x: 148.5
-              y: 200.5
+              x: -215.76217391304363
+              y: 137.11782608695648
               z: nan
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: SetNode
+              type: SequenceNode
               isActivated: true
-              [mlv.toolset.proto.SetNode.extension] {
-                source {
-                  source: SelectGlobalKB
-                  key: "place[1]"
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "14c34fc0-b32b-41c8-8bbd-6e6c71ba9599"
+              presentation {
+                itemTemplate: "BTSetNode.qml"
+                position {
+                  x: -74.804347826087
+                  y: 116.429347826087
+                  z: nan
                 }
-                destination: "destination"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SetNode
+                  isActivated: true
+                  [mlv.toolset.proto.SetNode.extension] {
+                    source {
+                      source: SelectGlobalKB
+                      key: "place[0]"
+                    }
+                    destination: "bobDestination"
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "a0d6ec44-8d51-47da-aa61-f1374c707c1b"
+              presentation {
+                itemTemplate: "BTSetNode.qml"
+                position {
+                  x: 33.782608695652016
+                  y: 122.46195652173901
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SetNode
+                  isActivated: true
+                  [mlv.toolset.proto.SetNode.extension] {
+                    source {
+                      source: plainValue
+                      value {
+                        type: boolean
+                        booleanValue: true
+                      }
+                    }
+                    destination: "isAtBar"
+                  }
+                }
               }
             }
           }
         }
         children {
           type: Node
-          name: "9657146f-8de5-42d1-b4aa-30ce7c857976"
+          name: "cbc7b29c-6b1b-470b-b100-15f93f44ade0"
           presentation {
-            itemTemplate: "BTSetNode.qml"
+            itemTemplate: "BTSequenceNode.qml"
             position {
-              x: -92.5
-              y: 164.5
+              x: 143.5
+              y: 134.5
               z: nan
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: SetNode
+              type: SequenceNode
               isActivated: true
-              [mlv.toolset.proto.SetNode.extension] {
-                source {
-                  source: SelectGlobalKB
-                  key: "place[0]"
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "3f39d2cc-3028-4cd4-be21-47c9f727d8eb"
+              presentation {
+                itemTemplate: "BTSetNode.qml"
+                position {
+                  x: -54.871739130434435
+                  y: 154.81304347826108
+                  z: nan
                 }
-                destination: "destination"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SetNode
+                  isActivated: true
+                  [mlv.toolset.proto.SetNode.extension] {
+                    source {
+                      source: SelectGlobalKB
+                      key: "place[1]"
+                    }
+                    destination: "bobDestination"
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "89da5422-a5c0-455b-b118-7425e2352dc3"
+              presentation {
+                itemTemplate: "BTSetNode.qml"
+                position {
+                  x: 89.866394139886324
+                  y: 171.75303024574669
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SetNode
+                  isActivated: true
+                  [mlv.toolset.proto.SetNode.extension] {
+                    source {
+                      source: plainValue
+                      value {
+                        type: boolean
+                        booleanValue: false
+                      }
+                    }
+                    destination: "isAtBar"
+                  }
+                }
               }
             }
           }

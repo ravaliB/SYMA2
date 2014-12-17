@@ -9,6 +9,17 @@ folder {
   name: "decision"
   folder {
     name: "embedded"
+    folder {
+      name: "SelectedAction"
+      file {
+        name: "buy_drink.mlbt"
+        location: "decision/buy_drink.mlbt"
+      }
+      file {
+        name: "talk.mlbt"
+        location: "decision/talk.mlbt"
+      }
+    }
     file {
       name: "SelectAction.mlbt"
       location: "decision/SelectAction.mlbt"
@@ -19,8 +30,12 @@ folder {
     }
   }
   file {
-    name: "WalkingAround.mlbt"
-    location: "decision/WalkingAround.mlbt"
+    name: "BarMan.mlbt"
+    location: "decision/BarMan.mlbt"
+  }
+  file {
+    name: "Bob.mlbt"
+    location: "decision/Bob.mlbt"
   }
 }
 folder {
@@ -28,6 +43,14 @@ folder {
 }
 folder {
   name: "knowledge"
+  file {
+    name: "Barman.mlkb"
+    location: "knowledge/Barman.mlkb"
+  }
+  file {
+    name: "Bob.mlkb"
+    location: "knowledge/Bob.mlkb"
+  }
   file {
     name: "Global.mlkb"
     location: "knowledge/Global.mlkb"
@@ -57,6 +80,10 @@ folder {
 }
 folder {
   name: "prototype"
+  file {
+    name: "BarMan.mlent"
+    location: "prototypes/BarMan.mlent"
+  }
   file {
     name: "Bob.mlent"
     location: "prototypes/Bob.mlent"

@@ -1,0 +1,74 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{de37e183-c857-4353-9f43-dfae9a03c25b}"
+name: "buy_drink"
+description: ""
+children {
+  type: Node
+  name: "8a6a8094-a961-45e0-aa67-9aed1ae17c44"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "04236ac6-6a02-49bb-9dd0-d66f8146768c"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5365
+          y: 2613
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "b3f7165b-db98-469a-aaf1-e1a03ec0db74"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: -13.417391304347802
+              y: 202.93260869565211
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/SelectedAction/talk.mlbt"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{0d6bfe82-125b-4de6-b24f-95f5b50df8e3}"
+name: "talk"
+description: ""
+children {
+  type: Node
+  name: "3aefe6cf-b30f-4a6f-9bbe-6c48e8ddafcd"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "d49ece4b-18e4-4e7f-afaa-2b09cef8c8e2"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5329
+          y: 2865
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "bd774b71-b059-43fa-82e1-986c7f17c1e5"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -35.5
+              y: 149.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 4
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

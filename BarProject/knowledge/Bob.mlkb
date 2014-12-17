@@ -1,0 +1,76 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "bobDestination"
+    value {
+      type: Object
+      objectValue {
+        key: "x"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "y"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "z"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "drink"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
+  objectValue {
+    key: "isAngry"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isAtBar"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isDrunk"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "toBar"
+    value {
+      type: Object
+      objectValue {
+        key: "wantDrink"
+        value {
+          type: String
+          stringValue: ""
+        }
+      }
+    }
+  }
+}

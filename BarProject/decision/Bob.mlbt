@@ -1,0 +1,129 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{efeaf49f-8600-4310-a508-0b04be6024c7}"
+name: "Bob"
+description: ""
+children {
+  type: Node
+  name: "a6756e78-fc83-4749-9c4f-a643477dbe84"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "dc2c4982-6b5e-41be-94be-01ce788e682a"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5307.0791497975706
+          y: 2659.7109311740887
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "43ecdca0-7aba-41f7-8a15-8654e703a7b6"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: -126
+              y: 178
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/SelectDestination.mlbt"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "74ce90fb-8dac-49e6-8207-4a2e85febb46"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 33.5
+              y: 188.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "goto"
+                parameters {
+                  type: StringType
+                  name: "target"
+                  kbSelection: selectLocalKB
+                  stringValue: "bobDestination"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "3f8f45e7-7ad0-4f36-b7a6-e8ca849a9109"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 184.45263157894806
+              y: 177.35829959514194
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/SelectAction.mlbt"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
