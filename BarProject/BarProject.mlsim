@@ -1,0 +1,8 @@
+version {
+  major: 1
+  minor: 0
+  patch: 0
+}
+navmesh: "/navigation/navmesh.mlnv"
+population: "/population/Entities.mlpop"
+knowledge: "/knowledge/Global.mlkb"

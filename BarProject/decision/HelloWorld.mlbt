@@ -1,0 +1,103 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{dace9695-1903-4b9a-865e-d7070a50510f}"
+name: "HelloWorld"
+description: ""
+children {
+  type: Node
+  name: "2e6d51d5-a507-4471-940e-27c48803c6ad"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "2cd3cb9c-bfd7-4eef-8480-a7a4fd6f06e6"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5431.5
+          y: 2769
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "42567f8e-8611-44fc-bedf-648e1f5b77e2"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -95.5
+              y: 133.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: DoubleType
+                  name: "time"
+                  kbSelection: plainValue
+                  doubleValue: 3.5
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "bd4d1eb7-7d03-4105-9252-26ce154465ff"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 79.5
+              y: 139.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: DoubleType
+                  name: "time"
+                  kbSelection: plainValue
+                  doubleValue: 2.5
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+version {
+  major: 0
+  minor: 6
+  patch: 0
+}
+entity {
+  prototype: "prototype/Bob.mlent"
+  id: "{64ee600f-2603-4022-8d68-2874a4566cdc}"
+  name: "Bob"
+  position {
+    x: 0
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: false
+  useOrientation: false
+}

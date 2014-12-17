@@ -1,0 +1,25 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+resource {
+  path: "/default/BarProject/decision/embedded/SelectAction.mlbt"
+  marker {
+    id: 32
+    type: "mlv.toolset.marker.tracepoint"
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:SelectAction.bt?nodeName=09db2609-3302-4a9c-81d3-25b78b4d1c6c&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "hi"
+    }
+    creation: "2014-12-16T16:27:46"
+  }
+}

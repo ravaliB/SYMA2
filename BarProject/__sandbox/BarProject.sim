@@ -1,0 +1,28 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+knowledge {
+  knowledgeFile: "knowledge/Global.mlkb"
+}
+action {
+}
+decision {
+  btFile: "decision/embedded/SelectAction.bt"
+  btFile: "decision/embedded/SelectDestination.bt"
+  btFile: "decision/WalkingAround.bt"
+}
+navigation {
+  navmesh {
+    file: "navigation/navmesh.dtNavmesh"
+  }
+  navFile: "navigation/Walking.nb"
+}
+update {
+  numThreads: 1
+}
+entityLibrary: "/BarProject.protos"
+initialEntity {
+  prototype: "_Bob"
+}

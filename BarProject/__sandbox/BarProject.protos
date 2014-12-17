@@ -1,0 +1,41 @@
+{
+    "version": [
+        0,
+        5,
+        0
+    ]
+}
+[
+    {
+        "name": "Bob",
+        "ancestor": "Customers",
+        "knowledge": {
+            "knowledge": {
+                "destination": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "decision": {
+            "behavior": "mlv:WalkingAround.bt"
+        }
+    },
+    {
+        "name": "Customers",
+        "action": null,
+        "navigation": {
+            "behavior": "mlv:Walking.nb"
+        }
+    },
+    {
+        "name": "_Bob",
+        "ancestor": "Bob",
+        "knowledge": {
+            "knowledge": {
+                "name": "Bob"
+            }
+        }
+    }
+]

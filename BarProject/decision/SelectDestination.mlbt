@@ -1,0 +1,99 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{55bde517-22b0-40ae-84a1-5b1b122256b3}"
+name: "SelectDestination"
+description: ""
+children {
+  type: Node
+  name: "b90cdc7a-9093-4a93-b7d8-a5a46405452a"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "d715cd11-22db-4eef-a355-cf0d0579e94d"
+      presentation {
+        itemTemplate: "BTSelectorRandom.qml"
+        position {
+          x: 5257.5
+          y: 2600.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SelectorNodeRandom
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "3f39d2cc-3028-4cd4-be21-47c9f727d8eb"
+          presentation {
+            itemTemplate: "BTSetNode.qml"
+            position {
+              x: 148.5
+              y: 200.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SetNode
+              isActivated: true
+              [mlv.toolset.proto.SetNode.extension] {
+                source {
+                  source: SelectGlobalKB
+                  key: "place[1]"
+                }
+                destination: "destination"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "9657146f-8de5-42d1-b4aa-30ce7c857976"
+          presentation {
+            itemTemplate: "BTSetNode.qml"
+            position {
+              x: -92.5
+              y: 164.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SetNode
+              isActivated: true
+              [mlv.toolset.proto.SetNode.extension] {
+                source {
+                  source: SelectGlobalKB
+                  key: "place[0]"
+                }
+                destination: "destination"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

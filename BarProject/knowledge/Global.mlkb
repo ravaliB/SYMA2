@@ -1,0 +1,76 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "place"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "name"
+          value {
+            type: String
+            stringValue: "bar"
+          }
+        }
+        objectValue {
+          key: "x"
+          value {
+            type: Real
+            realValue: -32
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Real
+            realValue: -32
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "name"
+          value {
+            type: String
+            stringValue: "table"
+          }
+        }
+        objectValue {
+          key: "x"
+          value {
+            type: Real
+            realValue: -10
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Real
+            realValue: -30
+          }
+        }
+      }
+    }
+  }
+}

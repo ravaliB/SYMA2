@@ -1,0 +1,83 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+name: "BarProject"
+builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
+folder {
+  name: "decision"
+  folder {
+    name: "embedded"
+    file {
+      name: "SelectAction.mlbt"
+      location: "decision/SelectAction.mlbt"
+    }
+    file {
+      name: "SelectDestination.mlbt"
+      location: "decision/SelectDestination.mlbt"
+    }
+  }
+  file {
+    name: "WalkingAround.mlbt"
+    location: "decision/WalkingAround.mlbt"
+  }
+}
+folder {
+  name: "implementation"
+}
+folder {
+  name: "knowledge"
+  file {
+    name: "Global.mlkb"
+    location: "knowledge/Global.mlkb"
+  }
+  file {
+    name: "Moving.mlkb"
+    location: "knowledge/Moving.mlkb"
+  }
+}
+folder {
+  name: "navigation"
+  file {
+    name: "navmesh.mlnv"
+    location: "navigation/navmesh.mlnv"
+  }
+  file {
+    name: "Walking.mlnb"
+    location: "navigation/Walking.mlnb"
+  }
+}
+folder {
+  name: "population"
+  file {
+    name: "Entities.mlpop"
+    location: "simulation/Entities.mlpop"
+  }
+}
+folder {
+  name: "prototype"
+  file {
+    name: "Bob.mlent"
+    location: "prototypes/Bob.mlent"
+  }
+  file {
+    name: "Customers.mlent"
+    location: "prototypes/Customers.mlent"
+  }
+}
+folder {
+  name: "scene"
+  file {
+    name: "Bar.mlscene"
+    location: "scene/Bar.mlscene"
+  }
+}
+file {
+  name: "BarProject.launch"
+  location: "BarProject.launch"
+}
+file {
+  name: "BarProject.mlsim"
+  location: "BarProject.mlsim"
+}
