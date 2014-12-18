@@ -6,11 +6,25 @@ version {
 root {
   type: Object
   objectValue {
-    key: "toClient"
+    key: "client"
     value {
       type: Object
       objectValue {
-        key: "accepts"
+        key: "channel"
+        value {
+          type: String
+          stringValue: ""
+        }
+      }
+      objectValue {
+        key: "name"
+        value {
+          type: String
+          stringValue: "none"
+        }
+      }
+      objectValue {
+        key: "wantToDrink"
         value {
           type: Bool
           boolValue: false

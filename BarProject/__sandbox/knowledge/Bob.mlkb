@@ -40,6 +40,13 @@ root {
     }
   }
   objectValue {
+    key: "hasBeenRefused"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
     key: "isAngry"
     value {
       type: Bool
@@ -57,20 +64,14 @@ root {
     key: "isDrunk"
     value {
       type: Bool
-      boolValue: false
+      boolValue: true
     }
   }
   objectValue {
-    key: "toBar"
+    key: "wantToDrink"
     value {
-      type: Object
-      objectValue {
-        key: "wantDrink"
-        value {
-          type: String
-          stringValue: ""
-        }
-      }
+      type: Bool
+      boolValue: false
     }
   }
 }

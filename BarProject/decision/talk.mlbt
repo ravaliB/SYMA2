@@ -24,32 +24,36 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "d49ece4b-18e4-4e7f-afaa-2b09cef8c8e2"
+      name: "e7ee705a-4d46-4d7e-8e2f-7801b01ec91a"
       presentation {
-        itemTemplate: "BTSequenceNode.qml"
+        itemTemplate: "BTParallelNode.qml"
         position {
-          x: 5329
-          y: 2865
+          x: 5299.5
+          y: 2954
           z: 0
         }
       }
       properties {
         type: BTNodeProperties
         [mlv.toolset.proto.BTNodeProperties.extension] {
-          type: SequenceNode
+          type: ParallelNode
           isActivated: true
+          [mlv.toolset.proto.ParallelNode.extension] {
+            statusCondition: StopAtFirstSuccess
+            retryTag: retryAll
+          }
         }
       }
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "bd774b71-b059-43fa-82e1-986c7f17c1e5"
+          name: "3bd87a1c-0336-43dd-af99-8c44bf437ee9"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
-              x: -35.5
-              y: 149.5
-              z: nan
+              x: -61.5
+              y: 177
+              z: 0
             }
           }
           properties {
@@ -60,10 +64,44 @@ children {
               [mlv.toolset.proto.ActionNode.extension] {
                 actionName: "wait"
                 parameters {
-                  type: IntType
+                  type: StringType
                   name: "time"
+                  kbSelection: selectParameters
+                  stringValue: "duration"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "1b2bd925-3ec0-4b6f-b314-6f7f057efe1e"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 65
+              y: 176
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "debugOut"
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: selectParameters
+                  stringValue: "caption"
+                }
+                parameters {
+                  type: IntType
+                  name: "target.y"
                   kbSelection: plainValue
-                  intValue: 4
+                  intValue: 2
                 }
               }
             }

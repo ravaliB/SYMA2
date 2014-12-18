@@ -39,7 +39,27 @@ folder {
   }
 }
 folder {
-  name: "implementation"
+  name: "implementations"
+  file {
+    name: "BarLib.mllib"
+    location: "implementations/BarLib.mllib"
+  }
+  file {
+    name: "BARPROJECT_implementation_lib_vc100-mt-gd.dll"
+    location: "implementations/BARPROJECT_implementation_lib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "BARPROJECT_implementation_lib_vc100-mt-gd.ilk"
+    location: "implementations/BARPROJECT_implementation_lib_vc100-mt-gd.ilk"
+  }
+  file {
+    name: "BARPROJECT_implementation_lib_vc100-mt-gd.pdb"
+    location: "implementations/BARPROJECT_implementation_lib_vc100-mt-gd.pdb"
+  }
+  file {
+    name: "BARPROJECT_implementation_lib_vc100-mt.dll"
+    location: "implementations/BARPROJECT_implementation_lib_vc100-mt.dll"
+  }
 }
 folder {
   name: "knowledge"

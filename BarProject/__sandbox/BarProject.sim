@@ -25,6 +25,16 @@ navigation {
 update {
   numThreads: 1
 }
+implementationLibrary {
+  config {
+    platform: win_vc100_x86
+    pluginFile: "implementations/BARPROJECT_implementation_lib_vc100-mt.dll"
+  }
+  config {
+    platform: win_vc100_x86_d
+    pluginFile: "implementations/BARPROJECT_implementation_lib_vc100-mt-gd.dll"
+  }
+}
 entityLibrary: "/BarProject.protos"
 initialEntity {
   prototype: "_Bob"

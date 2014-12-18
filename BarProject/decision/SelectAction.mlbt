@@ -83,8 +83,8 @@ children {
               presentation {
                 itemTemplate: "BTEmbeddedNode.qml"
                 position {
-                  x: 10.389565217390555
-                  y: 154.77913043478247
+                  x: 89.29344856046464
+                  y: 223.6466466973402
                   z: nan
                 }
               }

@@ -4,9 +4,9 @@ version {
   patch: 0
 }
 resource {
-  path: "/default/BarProject/decision/embedded/SelectedAction/talk.mlbt"
+  path: "/default/BarProject/decision/embedded/SelectedAction/buy_drink.mlbt"
   marker {
-    id: 65
+    id: 91
     type: "mlv.toolset.marker.tracepoint"
     attribute {
       key: "enabled"
@@ -14,11 +14,11 @@ resource {
     }
     attribute {
       key: "location"
-      value: "\"mlv:talk.bt?nodeName=bd774b71-b059-43fa-82e1-986c7f17c1e5&nodeType=action\""
+      value: "\"mlv:buy_drink.bt?nodeName=51429e99-c183-4955-b045-e6e59f4b31df&nodeType=action\""
     }
     attribute {
       key: "message"
-      value: "A drink !"
+      value: "WHAT ?!"
     }
     creation: ""
   }

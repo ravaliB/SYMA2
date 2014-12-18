@@ -56,6 +56,18 @@ component {
     }
   }
 }
+component {
+  name: "barman::impl_lib::ContactComponent"
+  uuid: "{f53669cb-7c79-4433-8483-d2a013b47769}"
+  enable: true
+  content {
+    type: Custom
+    [mlv.toolset.simulation.proto.PrototypeCustom.extension] {
+      obj {
+      }
+    }
+  }
+}
 bulkMax {
   x: 0.2
   y: 1.8

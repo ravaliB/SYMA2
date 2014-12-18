@@ -11,14 +11,19 @@
         "ancestor": "Customers",
         "knowledge": {
             "knowledge": {
-                "toClient": {
-                    "accepts": false
+                "client": {
+                    "channel": "",
+                    "name": "none",
+                    "wantToDrink": false
                 }
             }
         },
         "decision": {
             "behavior": "mlv:BarMan.bt"
-        }
+        },
+        "component": [
+            "f53669cb-7c79-4433-8483-d2a013b47769"
+        ]
     },
     {
         "name": "Bob",
@@ -31,12 +36,11 @@
                     "z": 0.0
                 },
                 "drink": 0,
+                "hasBeenRefused": false,
                 "isAngry": false,
                 "isAtBar": false,
-                "isDrunk": false,
-                "toBar": {
-                    "wantDrink": ""
-                }
+                "isDrunk": true,
+                "wantToDrink": false
             }
         },
         "decision": {

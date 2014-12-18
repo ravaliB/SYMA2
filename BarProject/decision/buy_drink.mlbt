@@ -28,8 +28,8 @@ children {
       presentation {
         itemTemplate: "BTSequenceNode.qml"
         position {
-          x: 5365
-          y: 2613
+          x: 5313.6897684310015
+          y: 2610.5144470699429
           z: 0
         }
       }
@@ -43,26 +43,330 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "b3f7165b-db98-469a-aaf1-e1a03ec0db74"
+          name: "8154efc9-5d85-4b68-9c6b-d534a547437c"
           presentation {
-            itemTemplate: "BTEmbeddedNode.qml"
+            itemTemplate: "BTSetNode.qml"
             position {
-              x: -13.417391304347802
-              y: 202.93260869565211
-              z: 0
+              x: -231.51876284613081
+              y: 148.58745384611484
+              z: nan
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: BTEmbeddedBehaviorNode
+              type: SetNode
               isActivated: true
-              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
-                behaviorName {
-                  type: StringType
-                  name: ""
-                  kbSelection: plainValue
-                  stringValue: "decision/embedded/SelectedAction/talk.mlbt"
+              [mlv.toolset.proto.SetNode.extension] {
+                source {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+                destination: "wantToDrink"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "0431e3b4-0d88-4fd0-b59d-9cac7b187d54"
+          presentation {
+            itemTemplate: "BTSubscribeMessageNode.qml"
+            position {
+              x: -86.115602000774743
+              y: 149.71461013173757
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SubscribeMessageNode
+              isActivated: true
+              [mlv.toolset.proto.SubscribeMessageNode.extension] {
+                messageChannel {
+                  source: selectLocalKB
+                  key: "wantDrink"
+                }
+                subscribeMode: SubscribeNew
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "5bf920e8-1fb0-435b-8e92-5b139e10c41c"
+          presentation {
+            itemTemplate: "BTSelectorPrio.qml"
+            position {
+              x: 123.61041238596044
+              y: 137.8878324566449
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SelectorNodePriority
+              isActivated: true
+              [mlv.toolset.proto.SelectorNodePriority.extension] {
+                usesActivePropagation: true
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "df121c78-f238-4019-b637-ea6fafbde19b"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: -229.28253143749407
+                  y: 183.82092997452128
+                  z: nan
+                }
+                label: "HasBeenRefused"
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "1bad90b8-3c9e-4e2b-9d2b-b174dc3f5cac"
+                  presentation {
+                    itemTemplate: "BTReceiveMessageNode.qml"
+                    position {
+                      x: -113.56062874989675
+                      y: 102.67125339031827
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ReceiveMessageNode
+                      isActivated: true
+                      [mlv.toolset.proto.ReceiveMessageNode.extension] {
+                        messageChannel {
+                          source: selectLocalKB
+                          key: "wantDrink"
+                        }
+                        senderDestination: ""
+                        contentDestination: ""
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "edabc3fb-e7ea-4d5a-bff9-12caed651fda"
+                  presentation {
+                    itemTemplate: "BTSetNode.qml"
+                    position {
+                      x: 22.556563244843346
+                      y: 107.33812854442385
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: SetNode
+                      isActivated: true
+                      [mlv.toolset.proto.SetNode.extension] {
+                        source {
+                          source: plainValue
+                          value {
+                            type: boolean
+                            booleanValue: true
+                          }
+                        }
+                        destination: "hasBeenRefused"
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "564bed0e-94a1-47bd-9183-bf54ea12932e"
+                  presentation {
+                    itemTemplate: "BTSubscribeMessageNode.qml"
+                    position {
+                      x: 154.81527132550764
+                      y: 116.55785682003579
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: SubscribeMessageNode
+                      isActivated: true
+                      [mlv.toolset.proto.SubscribeMessageNode.extension] {
+                        messageChannel {
+                          source: selectLocalKB
+                          key: "wantDrink"
+                        }
+                        subscribeMode: Unsubscribe
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "51429e99-c183-4955-b045-e6e59f4b31df"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 263.67844620695359
+                      y: 119.78312895537147
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "stall"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "5db5d3d1-cbb8-4bf2-95e4-d4226945ab74"
+              presentation {
+                itemTemplate: "BTUntilNode.qml"
+                position {
+                  x: 114.59547962859142
+                  y: 80.950932018261483
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: UntilNode
+                  isActivated: true
+                  [mlv.toolset.proto.UntilNode.extension] {
+                    operator: Equal
+                    leftOperand {
+                      source: plainValue
+                      value {
+                        type: boolean
+                        booleanValue: true
+                      }
+                    }
+                    rightOperand {
+                      source: plainValue
+                      value {
+                        type: boolean
+                        booleanValue: false
+                      }
+                    }
+                  }
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "079e869c-d190-4465-88e6-07d793379e4b"
+                  presentation {
+                    itemTemplate: "BTSequenceNode.qml"
+                    position {
+                      x: 90.673915889946329
+                      y: 184.8352900833529
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: SequenceNode
+                      isActivated: true
+                    }
+                  }
+                  [mlv.toolset.proto.Node.extension] {
+                    children {
+                      type: Node
+                      name: "7e8548bd-74ea-4de1-b301-1f83be611d8d"
+                      presentation {
+                        itemTemplate: "BTEmbeddedNode.qml"
+                        position {
+                          x: -19.56036692356065
+                          y: 195.88406042977431
+                          z: nan
+                        }
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: BTEmbeddedBehaviorNode
+                          isActivated: true
+                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                            behaviorName {
+                              type: StringType
+                              name: ""
+                              kbSelection: plainValue
+                              stringValue: "decision/embedded/SelectedAction/talk.mlbt"
+                            }
+                            parameters {
+                              type: StringType
+                              name: "caption"
+                              kbSelection: plainValue
+                              stringValue: "thanks!"
+                            }
+                            parameters {
+                              type: IntType
+                              name: "duration"
+                              kbSelection: plainValue
+                              intValue: 2
+                            }
+                          }
+                        }
+                      }
+                    }
+                    children {
+                      type: Node
+                      name: "6e428a84-4d40-4b28-bdc3-cf65b01dc518"
+                      presentation {
+                        itemTemplate: "BTActionNode.qml"
+                        position {
+                          x: 150.1626038448012
+                          y: 134.27229706865683
+                          z: nan
+                        }
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: ActionNode
+                          isActivated: true
+                          [mlv.toolset.proto.ActionNode.extension] {
+                            actionName: "goto"
+                            parameters {
+                              type: StringType
+                              name: "target"
+                              kbSelection: selectLocalKB
+                              stringValue: "place[1]"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
