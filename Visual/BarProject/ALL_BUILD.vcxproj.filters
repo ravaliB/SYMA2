@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CMakeFiles\c90a150e3adc7f9318461de85cb7787c\ALL_BUILD.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{678C8FE8-DE1B-4251-A83C-7A3C15014392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{922668D7-0162-428F-8770-4314C0E1C259}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

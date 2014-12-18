@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ImplementationLibrary.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\InterpolateEntityPositionAction.cpp">
+      <Filter>sources\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ContactComponent.cpp">
+      <Filter>sources\components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ImplementationLibrary.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\InterpolateEntityPositionAction.h">
+      <Filter>sources\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ContactComponent.h">
+      <Filter>sources\components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sources\actions">
+      <UniqueIdentifier>{53B2752D-689F-4FC4-A033-243423DF27CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\components">
+      <UniqueIdentifier>{E1F858CF-7BB3-46A0-8CFE-82255E26DC72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{922668D7-0162-428F-8770-4314C0E1C259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{DAD12971-0C08-4476-A1EE-062F64D6CE37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/CMakeFiles/ALL_BUILD.dir
+C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/CMakeFiles/BARPROJECT_implementation_lib.dir
+C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/CMakeFiles/ZERO_CHECK.dir

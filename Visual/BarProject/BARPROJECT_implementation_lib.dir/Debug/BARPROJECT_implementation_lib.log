@@ -1,0 +1,52 @@
+﻿La génération a démarré 18/12/2014 21:04:17.
+     1>Projet "C:\Users\andria\Documents\Visual Studio 2010\Projects\BarProject\BARPROJECT_implementation_lib.vcxproj" sur le nœud 2 (rebuild cible(s)).
+     1>_PrepareForClean:
+         Suppression du fichier "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib.lastbuildstate".
+       InitializeBuildStatus:
+         Création de "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       CustomBuild:
+         Building Custom Rule C:/MASA Group/MASA Life/workspace/BarProject/implementations/src/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\andria\Documents\Visual Studio 2010\Projects\BarProject\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\MASA Group\MASA Life\dll\vc100\..\..\include" /I"C:\MASA Group\MASA Life\lib\vc100\..\..\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D BARPROJECT_implementation_lib_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"BARPROJECT_implementation_lib.dir\Debug\\" /Fd"BARPROJECT_implementation_lib.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ImplementationLibrary.cpp" "..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\InterpolateEntityPositionAction.cpp" "..\..\..\..\..\..\MASA Group\MASA Life\workspace\BarProject\implementations\src\ContactComponent.cpp"
+         ImplementationLibrary.cpp
+         InterpolateEntityPositionAction.cpp
+     1>C:\MASA Group\MASA Life\include\mlv/utils/GeometryPrimitives.h(83): warning C4251: 'mlv::utils::Triangle3r::vertices_' : class 'mlv::utils::Vector3<T>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'mlv::utils::Triangle3r'
+                 with
+                 [
+                     T=double
+                 ]
+         ContactComponent.cpp
+     1>C:\MASA Group\MASA Life\include\mlv/utils/GeometryPrimitives.h(83): warning C4251: 'mlv::utils::Triangle3r::vertices_' : class 'mlv::utils::Vector3<T>' nécessite une interface DLL pour être utilisé(e) par les clients de class 'mlv::utils::Triangle3r'
+                 with
+                 [
+                     T=double
+                 ]
+         Génération de code en cours...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest.res" BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\MASA Group\MASA Life\workspace\BarProject\implementations\BARPROJECT_implementation_lib_vc100-mt-gd.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\MASA Group\MASA Life\lib\vc100\mlv_allocator_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_utils_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_behavior_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_components_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_configuration_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_components_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_behavior_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_utils_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\libprotobuf_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_allocator_vc100-mt-gd.lib" ws2_32.lib "C:\MASA Group\MASA Life\lib\vc100\pthreads_d.lib" "C:\MASA Group\MASA Life\lib\vc100\Recast-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\Detour-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\DetourCrowd-gd.lib" /MANIFEST /ManifestFile:"BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/MASA Group/MASA Life/workspace/BarProject/implementations/BARPROJECT_implementation_lib_vc100-mt-gd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.lib" /MACHINE:X86 /DLL "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest.res"
+         BARPROJECT_implementation_lib.dir\Debug\ImplementationLibrary.obj
+         BARPROJECT_implementation_lib.dir\Debug\InterpolateEntityPositionAction.obj
+         BARPROJECT_implementation_lib.dir\Debug\ContactComponent.obj  /machine:X86 /debug 
+            Création de la bibliothèque C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.lib et de l'objet C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.exp
+       Manifest:
+         Suppression du fichier "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest" /manifest "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest.res" BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\MASA Group\MASA Life\workspace\BarProject\implementations\BARPROJECT_implementation_lib_vc100-mt-gd.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\MASA Group\MASA Life\lib\vc100\mlv_allocator_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_utils_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_behavior_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_components_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_configuration_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_components_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_behavior_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_simulation_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_utils_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\libprotobuf_vc100-mt-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\mlv_allocator_vc100-mt-gd.lib" ws2_32.lib "C:\MASA Group\MASA Life\lib\vc100\pthreads_d.lib" "C:\MASA Group\MASA Life\lib\vc100\Recast-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\Detour-gd.lib" "C:\MASA Group\MASA Life\lib\vc100\DetourCrowd-gd.lib" /MANIFEST /ManifestFile:"BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/MASA Group/MASA Life/workspace/BarProject/implementations/BARPROJECT_implementation_lib_vc100-mt-gd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.lib" /MACHINE:X86 /DLL "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib_vc100-mt-gd.dll.embed.manifest.res"
+         BARPROJECT_implementation_lib.dir\Debug\ImplementationLibrary.obj
+         BARPROJECT_implementation_lib.dir\Debug\InterpolateEntityPositionAction.obj
+         BARPROJECT_implementation_lib.dir\Debug\ContactComponent.obj  /machine:X86 /debug 
+            Création de la bibliothèque C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.lib et de l'objet C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/Debug/BARPROJECT_implementation_lib_vc100-mt-gd.exp
+         BARPROJECT_implementation_lib.vcxproj -> C:\MASA Group\MASA Life\workspace\BarProject\implementations\BARPROJECT_implementation_lib_vc100-mt-gd.dll
+       FinalizeBuildStatus:
+         Suppression du fichier "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib.unsuccessfulbuild".
+         Mise à jour de l'horodatage "BARPROJECT_implementation_lib.dir\Debug\BARPROJECT_implementation_lib.lastbuildstate".
+     1>Génération du projet "C:\Users\andria\Documents\Visual Studio 2010\Projects\BarProject\BARPROJECT_implementation_lib.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:10.47

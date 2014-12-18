@@ -1,0 +1,17 @@
+﻿La génération a démarré 18/12/2014 21:03:57.
+     1>Projet "C:\Users\andria\Documents\Visual Studio 2010\Projects\BarProject\ZERO_CHECK.vcxproj" sur le nœud 2 (rebuild cible(s)).
+     1>_PrepareForClean:
+         Suppression du fichier "Win32\Release\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+       InitializeBuildStatus:
+         Création de "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/andria/Documents/Visual Studio 2010/Projects/BarProject/CMakeFiles/generate.stamp is up-to-date.
+       FinalizeBuildStatus:
+         Suppression du fichier "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Win32\Release\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+     1>Génération du projet "C:\Users\andria\Documents\Visual Studio 2010\Projects\BarProject\ZERO_CHECK.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:01.36
