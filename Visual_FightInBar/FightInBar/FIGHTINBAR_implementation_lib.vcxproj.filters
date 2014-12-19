@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\ImplementationLibrary.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\setEntityBooleanAction.cpp">
+      <Filter>sources\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\IncrementAction.cpp">
+      <Filter>sources\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\ContactComponent.cpp">
+      <Filter>sources\components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\ImplementationLibrary.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\setEntityBooleanAction.h">
+      <Filter>sources\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\IncrementAction.h">
+      <Filter>sources\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\ContactComponent.h">
+      <Filter>sources\components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sources\actions">
+      <UniqueIdentifier>{9B52F2F0-BB94-4F08-8A36-514B012F9634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\components">
+      <UniqueIdentifier>{32CB2540-F2DE-4818-BA66-EFD77F8B53DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{80493D84-8D3A-494A-ABB3-02AD17493FD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{48E8785E-E1C7-4C56-9FD1-C1A69126B1A3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

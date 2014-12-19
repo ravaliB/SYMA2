@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{D0507A27-3EDC-4A0A-8C46-7D1ACF38FD94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F} = {6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00} = {21FD9DFF-EF63-4B18-82B7-D33044029F00}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FIGHTINBAR_implementation_lib", "FIGHTINBAR_implementation_lib.vcxproj", "{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00} = {21FD9DFF-EF63-4B18-82B7-D33044029F00}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{21FD9DFF-EF63-4B18-82B7-D33044029F00}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0507A27-3EDC-4A0A-8C46-7D1ACF38FD94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0507A27-3EDC-4A0A-8C46-7D1ACF38FD94}.Release|Win32.ActiveCfg = Release|Win32
+		{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}.Debug|Win32.Build.0 = Debug|Win32
+		{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}.Release|Win32.ActiveCfg = Release|Win32
+		{6DBDA054-BA87-4B8F-9C8B-B0554EBDB53F}.Release|Win32.Build.0 = Release|Win32
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00}.Debug|Win32.Build.0 = Debug|Win32
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00}.Release|Win32.ActiveCfg = Release|Win32
+		{21FD9DFF-EF63-4B18-82B7-D33044029F00}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -425,33 +425,143 @@ children {
               [mlv.toolset.proto.Node.extension] {
                 children {
                   type: Node
-                  name: "da3047a5-2190-4be1-a85c-482962dee06f"
+                  name: "add43c94-b4f7-4b3f-9024-c125c8c00e78"
                   presentation {
-                    itemTemplate: "BTActionNode.qml"
+                    itemTemplate: "BTSequenceNode.qml"
                     position {
-                      x: 31.558783783783838
-                      y: 170.31283783783829
+                      x: 98.4224689554494
+                      y: 96.037611395182466
                       z: nan
                     }
                   }
                   properties {
                     type: BTNodeProperties
                     [mlv.toolset.proto.BTNodeProperties.extension] {
-                      type: ActionNode
+                      type: SequenceNode
                       isActivated: true
-                      [mlv.toolset.proto.ActionNode.extension] {
-                        actionName: "SetEntityBoolean"
-                        parameters {
-                          type: StringType
-                          name: "key"
-                          kbSelection: plainValue
-                          stringValue: "isDrunk"
+                    }
+                  }
+                  [mlv.toolset.proto.Node.extension] {
+                    children {
+                      type: Node
+                      name: "da3047a5-2190-4be1-a85c-482962dee06f"
+                      presentation {
+                        itemTemplate: "BTActionNode.qml"
+                        position {
+                          x: -98.287132943754841
+                          y: 106.08769905040208
+                          z: nan
                         }
-                        parameters {
-                          type: BoolType
-                          name: "value"
-                          kbSelection: plainValue
-                          boolValue: true
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: ActionNode
+                          isActivated: true
+                          [mlv.toolset.proto.ActionNode.extension] {
+                            actionName: "SetEntityBoolean"
+                            parameters {
+                              type: StringType
+                              name: "key"
+                              kbSelection: plainValue
+                              stringValue: "isDrunk"
+                            }
+                            parameters {
+                              type: BoolType
+                              name: "value"
+                              kbSelection: plainValue
+                              boolValue: true
+                            }
+                          }
+                        }
+                      }
+                    }
+                    children {
+                      type: Node
+                      name: "aa2b76bc-eeab-4314-a7b5-ba3f57697272"
+                      presentation {
+                        itemTemplate: "BTSelectorRandom.qml"
+                        position {
+                          x: 49.923623082541781
+                          y: 124.80905770635491
+                          z: nan
+                        }
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: SelectorNodeRandom
+                          isActivated: true
+                        }
+                      }
+                      [mlv.toolset.proto.Node.extension] {
+                        children {
+                          type: Node
+                          name: "805d50ff-1625-4ca0-bab5-d00d9e344776"
+                          presentation {
+                            itemTemplate: "BTActionNode.qml"
+                            position {
+                              x: 74.885434623813126
+                              y: 159.13154857560266
+                              z: nan
+                            }
+                          }
+                          properties {
+                            type: BTNodeProperties
+                            [mlv.toolset.proto.BTNodeProperties.extension] {
+                              type: ActionNode
+                              isActivated: true
+                              [mlv.toolset.proto.ActionNode.extension] {
+                                actionName: "SetEntityBoolean"
+                                parameters {
+                                  type: StringType
+                                  name: "key"
+                                  kbSelection: plainValue
+                                  stringValue: "wantFight"
+                                }
+                                parameters {
+                                  type: BoolType
+                                  name: "value"
+                                  kbSelection: plainValue
+                                  boolValue: false
+                                }
+                              }
+                            }
+                          }
+                        }
+                        children {
+                          type: Node
+                          name: "d1c8248a-8267-4423-91a2-abfc03d55060"
+                          presentation {
+                            itemTemplate: "BTActionNode.qml"
+                            position {
+                              x: -73.3253214024835
+                              y: 191.89392622352125
+                              z: nan
+                            }
+                          }
+                          properties {
+                            type: BTNodeProperties
+                            [mlv.toolset.proto.BTNodeProperties.extension] {
+                              type: ActionNode
+                              isActivated: true
+                              [mlv.toolset.proto.ActionNode.extension] {
+                                actionName: "SetEntityBoolean"
+                                parameters {
+                                  type: StringType
+                                  name: "key"
+                                  kbSelection: plainValue
+                                  stringValue: "wantFight"
+                                }
+                                parameters {
+                                  type: BoolType
+                                  name: "value"
+                                  kbSelection: plainValue
+                                  boolValue: true
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }

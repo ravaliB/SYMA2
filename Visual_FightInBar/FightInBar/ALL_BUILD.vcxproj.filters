@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\MASA Group\MASA Life\workspace\FightInBar\implementations\src\CMakeLists.txt">
+      <Filter>cmake</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CMakeFiles\e8f79e34743e054f7d5da38a5c09769b\ALL_BUILD.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B108A652-7F2D-4BCA-B3F7-C5A604E27459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmake">
+      <UniqueIdentifier>{80493D84-8D3A-494A-ABB3-02AD17493FD1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

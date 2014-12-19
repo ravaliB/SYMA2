@@ -94,8 +94,8 @@ namespace fightinbar
 		{
 			const mlv::utils::DynamicObject& entityKnowledge = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[i]);
 
-			if (entityKnowledge.hasProperty ("order"))
-				order |= entityKnowledge.getBool ("order");
+			if (entityKnowledge.hasProperty ("buyDrink"))
+				order |= entityKnowledge.getBool ("buyDrink");
 		}
 
 		globalKnowledge.setBool("order", order);
