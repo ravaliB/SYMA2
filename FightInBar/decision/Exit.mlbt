@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{44faa712-0537-4fc8-8f2c-53f0fb9e8acb}"
+name: "Exit"
+description: ""
+children {
+  type: Node
+  name: "56a57709-d7bc-4aa2-9a67-787a6c6d021f"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "9915050c-cd78-4df9-b78c-eb7dce11463a"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5210
+          y: 2566
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "c7fe6bc1-912e-44ff-9c6d-9ad66b3b8133"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 15.5
+              y: 194.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "goto"
+                parameters {
+                  type: StringType
+                  name: "target"
+                  kbSelection: SelectGlobalKB
+                  stringValue: "exit"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

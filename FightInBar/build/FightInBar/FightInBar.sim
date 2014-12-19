@@ -1,0 +1,86 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+knowledge {
+  knowledgeFile: "knowledge/global.mlkb"
+  knowledgeFile: "knowledge/barman.mlkb"
+  knowledgeFile: "knowledge/customer.mlkb"
+  knowledgeFile: "knowledge/security.mlkb"
+}
+action {
+}
+decision {
+  btFile: "decision/embedded/buy_drink.bt"
+  btFile: "decision/embedded/Exit.bt"
+  btFile: "decision/embedded/fight.bt"
+  btFile: "decision/Barman.bt"
+  btFile: "decision/Customer.bt"
+  btFile: "decision/Security.bt"
+}
+navigation {
+  navmesh {
+    file: "navigation/navmesh.dtNavmesh"
+  }
+  navFile: "navigation/Simple.nb"
+}
+update {
+  numThreads: 1
+}
+implementationLibrary {
+  config {
+    platform: win_vc100_x86
+    pluginFile: "implementations/FIGHTINBAR_implementation_lib_vc100-mt.dll"
+  }
+  config {
+    platform: win_vc100_x86_d
+    pluginFile: "implementations/FIGHTINBAR_implementation_lib_vc100-mt-gd.dll"
+  }
+}
+entityLibrary: "/FightInBar.protos"
+initialEntity {
+  prototype: "_Barman"
+}
+initialEntity {
+  prototype: "_Secu1"
+}
+initialEntity {
+  prototype: "_Secu2"
+}
+initialEntity {
+  prototype: "_Customer1"
+}
+initialEntity {
+  prototype: "_Customer2"
+}
+initialEntity {
+  prototype: "_Customer3"
+}
+initialEntity {
+  prototype: "_Customer4"
+}
+initialEntity {
+  prototype: "_Customer5"
+}
+initialEntity {
+  prototype: "_Customer6"
+}
+initialEntity {
+  prototype: "_Customer7"
+}
+initialEntity {
+  prototype: "_Customer8"
+}
+initialEntity {
+  prototype: "_Customer9"
+}
+initialEntity {
+  prototype: "_Customer10"
+}
+initialEntity {
+  prototype: "_Customer11"
+}
+initialEntity {
+  prototype: "_Customer12"
+}

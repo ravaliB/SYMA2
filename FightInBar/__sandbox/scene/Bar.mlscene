@@ -1,0 +1,169 @@
+{
+    "version": [
+        1,
+        0,
+        0
+    ]
+}
+{
+    "type": "root",
+    "children": [
+        {
+            "type": "camera",
+            "enable": true,
+            "translation": [
+                -3.3063117491661393,
+                28.539285634268307,
+                40.483297183300351
+            ],
+            "rotation": [
+                -0.19929961603111016,
+                -0.025651438341673192,
+                -0.0052188441148651021,
+                0.97958890889339922
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "Bar_free.mlcam"
+        },
+        {
+            "type": "camera",
+            "enable": false,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "Bar_birds_eye.mlcam"
+        },
+        {
+            "type": "geometry",
+            "label": "Ground",
+            "enable": true,
+            "color": "#cbcbcb",
+            "translation": [
+                0.0,
+                -0.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                100.0,
+                1.0,
+                100.0
+            ],
+            "source": "cube.obj"
+        },
+        {
+            "type": "geometry",
+            "label": "Bar",
+            "enable": true,
+            "color": "#ed2dab",
+            "translation": [
+                -32.0,
+                0.0,
+                -38.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                2.0,
+                3.0,
+                13.0
+            ],
+            "source": "cube.obj"
+        },
+        {
+            "type": "geometry",
+            "label": "Table",
+            "enable": true,
+            "color": "#e11296",
+            "translation": [
+                -14.0,
+                0.0,
+                -26.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                4.0,
+                2.0,
+                2.0
+            ],
+            "source": "cube.obj"
+        },
+        {
+            "type": "geometry",
+            "label": "Table2",
+            "enable": true,
+            "color": "#e358b1",
+            "translation": [
+                0.0,
+                0.0,
+                -25.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                4.0,
+                2.0,
+                2.0
+            ],
+            "source": "cube.obj"
+        },
+        {
+            "type": "geometry",
+            "label": "Table3",
+            "enable": true,
+            "color": "#d786c8",
+            "translation": [
+                10.0,
+                0.0,
+                -26.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                4.0,
+                2.0,
+                2.0
+            ],
+            "source": "cube.obj"
+        }
+    ]
+}

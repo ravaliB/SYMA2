@@ -1,0 +1,135 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+name: "FightInBar"
+builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
+folder {
+  name: "decision"
+  folder {
+    name: "embedded"
+    file {
+      name: "buy_drink.mlbt"
+      location: "decision/buy_drink.mlbt"
+    }
+    file {
+      name: "Exit.mlbt"
+      location: "decision/Exit.mlbt"
+    }
+    file {
+      name: "fight.mlbt"
+      location: "decision/fight.mlbt"
+    }
+  }
+  file {
+    name: "Barman.mlbt"
+    location: "decision/Barman.mlbt"
+  }
+  file {
+    name: "Customer.mlbt"
+    location: "decision/Customer.mlbt"
+  }
+  file {
+    name: "Security.mlbt"
+    location: "decision/Security.mlbt"
+  }
+}
+folder {
+  name: "implementations"
+  file {
+    name: "barLib.mllib"
+    location: "implementations/barLib.mllib"
+  }
+  file {
+    name: "FIGHTINBAR_implementation_lib_vc100-mt-gd.dll"
+    location: "implementations/FIGHTINBAR_implementation_lib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "FIGHTINBAR_implementation_lib_vc100-mt-gd.ilk"
+    location: "implementations/FIGHTINBAR_implementation_lib_vc100-mt-gd.ilk"
+  }
+  file {
+    name: "FIGHTINBAR_implementation_lib_vc100-mt-gd.pdb"
+    location: "implementations/FIGHTINBAR_implementation_lib_vc100-mt-gd.pdb"
+  }
+  file {
+    name: "FIGHTINBAR_implementation_lib_vc100-mt.dll"
+    location: "implementations/FIGHTINBAR_implementation_lib_vc100-mt.dll"
+  }
+}
+folder {
+  name: "knowledge"
+  file {
+    name: "barman.mlkb"
+    location: "knowledge/barman.mlkb"
+  }
+  file {
+    name: "customer.mlkb"
+    location: "knowledge/customer.mlkb"
+  }
+  file {
+    name: "global.mlkb"
+    location: "knowledge/global.mlkb"
+  }
+  file {
+    name: "moving.mlkb"
+    location: "knowledge/moving.mlkb"
+  }
+  file {
+    name: "security.mlkb"
+    location: "knowledge/security.mlkb"
+  }
+}
+folder {
+  name: "navigation"
+  file {
+    name: "navmesh.mlnv"
+    location: "navigation/navmesh.mlnv"
+  }
+  file {
+    name: "Simple.mlnb"
+    location: "navigation/Simple.mlnb"
+  }
+}
+folder {
+  name: "population"
+  file {
+    name: "Entities.mlpop"
+    location: "simulation/Entities.mlpop"
+  }
+}
+folder {
+  name: "prototype"
+  file {
+    name: "Ancestor.mlent"
+    location: "prototypes/Ancestor.mlent"
+  }
+  file {
+    name: "Barman.mlent"
+    location: "prototypes/Barman.mlent"
+  }
+  file {
+    name: "Customer.mlent"
+    location: "prototypes/Customer.mlent"
+  }
+  file {
+    name: "Security.mlent"
+    location: "prototypes/Security.mlent"
+  }
+}
+folder {
+  name: "scene"
+  file {
+    name: "Bar.mlscene"
+    location: "../BarProject/scene/Bar.mlscene"
+  }
+}
+file {
+  name: "FightInBar.launch"
+  location: "FightInBar.launch"
+}
+file {
+  name: "FightInBar.mlsim"
+  location: "FightInBar.mlsim"
+}

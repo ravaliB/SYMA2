@@ -1,0 +1,289 @@
+{
+    "version": [
+        0,
+        5,
+        0
+    ]
+}
+[
+    {
+        "name": "Ancestor",
+        "knowledge": {
+            "knowledge": {
+                "destination": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "action": null
+    },
+    {
+        "name": "Barman",
+        "ancestor": "Ancestor",
+        "knowledge": {
+            "knowledge": {
+                "type": "barman"
+            }
+        },
+        "action": null,
+        "decision": {
+            "behavior": "mlv:Barman.bt"
+        },
+        "component": [
+            "f53669cb-7c79-4433-8483-d2a013b47769"
+        ]
+    },
+    {
+        "name": "Customer",
+        "ancestor": "Ancestor",
+        "knowledge": {
+            "knowledge": {
+                "buyDrink": false,
+                "drink": 0,
+                "hasDrink": false,
+                "isDrunk": false,
+                "isFighting": false,
+                "isMugged": false,
+                "isNotKO": true,
+                "isTalking": false,
+                "thresholdDrink": 5,
+                "type": "client",
+                "wantFight": false
+            }
+        },
+        "action": null,
+        "decision": {
+            "behavior": "mlv:Customer.bt"
+        },
+        "navigation": {
+            "behavior": "mlv:Simple.nb"
+        }
+    },
+    {
+        "name": "Security",
+        "ancestor": "Ancestor",
+        "knowledge": {
+            "knowledge": {
+                "goFight": false,
+                "place": false
+            }
+        },
+        "action": null,
+        "decision": {
+            "behavior": "mlv:Security.bt"
+        },
+        "navigation": {
+            "behavior": "mlv:Simple.nb"
+        },
+        "component": [
+            "f53669cb-7c79-4433-8483-d2a013b47769"
+        ]
+    },
+    {
+        "name": "_Barman",
+        "ancestor": "Barman",
+        "knowledge": {
+            "knowledge": {
+                "name": "Barman",
+                "position": {
+                    "x": -35.0,
+                    "y": 0.0,
+                    "z": -38.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Secu1",
+        "ancestor": "Security",
+        "knowledge": {
+            "knowledge": {
+                "name": "Secu1",
+                "position": {
+                    "x": -15.0,
+                    "y": 0.0,
+                    "z": 12.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Secu2",
+        "ancestor": "Security",
+        "knowledge": {
+            "knowledge": {
+                "name": "Secu2",
+                "position": {
+                    "x": -32.0,
+                    "y": 0.0,
+                    "z": 10.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer1",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer1",
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 20.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer2",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer2",
+                "position": {
+                    "x": -20.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer3",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer3",
+                "position": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": -30.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer4",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer4",
+                "position": {
+                    "x": 13.0,
+                    "y": 0.0,
+                    "z": -10.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer5",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer5",
+                "position": {
+                    "x": -20.0,
+                    "y": 0.0,
+                    "z": 10.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer6",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer6",
+                "position": {
+                    "x": -25.0,
+                    "y": 0.0,
+                    "z": 11.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer7",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer7",
+                "position": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 15.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer8",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer8",
+                "position": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 5.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer9",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer9",
+                "position": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer10",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer10",
+                "position": {
+                    "x": -13.0,
+                    "y": 0.0,
+                    "z": -20.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer11",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer11",
+                "position": {
+                    "x": 12.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    {
+        "name": "_Customer12",
+        "ancestor": "Customer",
+        "knowledge": {
+            "knowledge": {
+                "name": "Customer12"
+            }
+        }
+    }
+]

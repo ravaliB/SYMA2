@@ -1,0 +1,69 @@
+version {
+  major: 0
+  minor: 6
+  patch: 0
+}
+name: "Customer"
+ancestor: "prototype/Ancestor.mlent"
+component {
+  name: "Action"
+  uuid: "{dc6f3a6c-ee36-49c9-a767-0d69d17e27ef}"
+  enable: true
+  content {
+    type: Action
+    [mlv.toolset.simulation.proto.PrototypeAction.extension] {
+    }
+  }
+}
+component {
+  name: "Knowledge"
+  uuid: "{3e7bc583-e0a7-488c-8433-d832b00d098e}"
+  enable: true
+  content {
+    type: Knowledge
+    [mlv.toolset.simulation.proto.PrototypeKnowledge.extension] {
+      knowledgeFile: "knowledge/customer.mlkb"
+    }
+  }
+}
+component {
+  name: "Decision"
+  uuid: "{66a3232e-e60c-4f54-bf22-33843a8d6875}"
+  enable: true
+  content {
+    type: Decision
+    [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
+      behavior: "decision/Customer.mlbt"
+    }
+  }
+}
+component {
+  name: "Navigation"
+  uuid: "{13b33328-838b-4b6d-b8ef-765aa5c78cab}"
+  enable: true
+  content {
+    type: Navigation
+    [mlv.toolset.simulation.proto.PrototypeNavigation.extension] {
+      hasMaxAngularSpeed: false
+      maxAngularSpeed: 3.141592654
+      hasMaxAcceleration: false
+      maxAcceleration: 10
+      hasMaxSpeed: false
+      maxSpeed: 2
+      hasPerceptionDistance: false
+      perceptionDistance: 10
+      behavior: "navigation/Simple.mlnb"
+    }
+  }
+}
+bulkMax {
+  x: 0.2
+  y: 1.8
+  z: -0.2
+}
+bulkMin {
+  x: -0.2
+  y: 0
+  z: -0.2
+}
+bulkEnable: false

@@ -1,0 +1,16 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+name: ""
+configuration {
+  file: "implementations/FIGHTINBAR_implementation_lib_vc100-mt-gd.dll"
+  platform: vc100_x86
+  name: "Debug"
+}
+configuration {
+  file: "implementations/FIGHTINBAR_implementation_lib_vc100-mt.dll"
+  platform: vc100_x86
+  name: "Release"
+}

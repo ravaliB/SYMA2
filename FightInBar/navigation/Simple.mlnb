@@ -1,0 +1,107 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+type: NavigationTree
+uuid: "{6b68b7c0-63f3-4ea0-9528-7e3a0738b562}"
+name: "Simple"
+description: ""
+children {
+  type: Node
+  name: "791e0264-412b-4df4-844c-5ce9d3aa0f70"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.navigation.proto.Node.extension] {
+    children {
+      type: Node
+      name: "6bb18557-63b3-4554-98ea-3233a80db66d"
+      presentation {
+        itemTemplate: "PipelineNode.qml"
+        position {
+          x: 800
+          y: 800
+          z: 0
+        }
+        label: "Pipeline"
+      }
+      properties {
+        type: NavNodeProperties
+        [mlv.toolset.navigation.proto.NavNodeProperties.extension] {
+          type: PipelineNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.navigation.proto.Node.extension] {
+        children {
+          type: Node
+          name: "e36fe33e-847d-4767-836d-b9d12976615d"
+          presentation {
+            itemTemplate: "PathFollowingNode.qml"
+            position {
+              x: -125
+              y: 175
+              z: 0
+            }
+            label: "Path Following"
+          }
+          properties {
+            type: NavNodeProperties
+            [mlv.toolset.navigation.proto.NavNodeProperties.extension] {
+              type: PathFollowingNode
+              isActivated: true
+              [mlv.toolset.navigation.proto.PathFollowingNode.extension] {
+                initialPathfindIterationCount: 20
+                visibilityPathOptimizationRange: -1
+                localPathReplanningInterval: -1
+                anticipateTurns: false
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "61a8706d-3781-4cdc-830c-122e3c71f81e"
+          presentation {
+            itemTemplate: "CollisionAvoidanceNode.qml"
+            position {
+              x: 125
+              y: 175
+              z: 0
+            }
+            label: "Collision Avoidance"
+          }
+          properties {
+            type: NavNodeProperties
+            [mlv.toolset.navigation.proto.NavNodeProperties.extension] {
+              type: CollisionAvoidanceNode
+              isActivated: true
+              [mlv.toolset.navigation.proto.CollisionAvoidanceNode.extension] {
+                maximumCircleObstaclesCount: 6
+                maximumSegmentObstaclesCount: 8
+                sampleOriginScale: 0.4
+                sampleLevelsCount: 5
+                sampleSectorsCount: 7
+                sampleRingsCount: 7
+                weightDesiredVelocity: 2
+                weightCurrentVelocity: 0.75
+                weightCurrentAvoidanceSide: 0.75
+                weightTimeToCollision: 2.5
+                horizonTime: 2.5
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

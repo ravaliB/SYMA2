@@ -1,0 +1,35 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "destination"
+    value {
+      type: Object
+      objectValue {
+        key: "x"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "y"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "z"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+    }
+  }
+}

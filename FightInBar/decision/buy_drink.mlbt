@@ -1,0 +1,489 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{2c8602df-ef89-4728-822e-c3963115412c}"
+name: "buy_drink"
+description: ""
+children {
+  type: Node
+  name: "ed6ebde7-285a-409a-9668-b32d0cbc3952"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "6e0a26d9-2ddb-4e4e-a900-384da7f27cfd"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5484
+          y: 2577
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "ee5fac5e-90aa-4a2e-a024-628986c5f918"
+          presentation {
+            itemTemplate: "BTSequenceNode.qml"
+            position {
+              x: -230.16959459459395
+              y: 162.85472972973002
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SequenceNode
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "e4834f62-d404-4ffd-a1bc-cfc8cd95127e"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -327.5
+                  y: 151.5
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "bar"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "d083cef3-4cdc-4688-897b-a2b1ecdf77e7"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: -48.097297297296791
+                  y: 145.17229729729752
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "4173e356-232f-4abf-a229-ce43f4097380"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -153.5614864864865
+                      y: 136.14729729729743
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "wait"
+                        parameters {
+                          type: IntType
+                          name: "time"
+                          kbSelection: plainValue
+                          intValue: 2
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "eed6f79f-798d-4121-a534-b05c0c3300e9"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -2.2526844411931961
+                      y: 218.54100073046357
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "SetEntityBoolean"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "buyDrink"
+                        }
+                        parameters {
+                          type: BoolType
+                          name: "value"
+                          kbSelection: plainValue
+                          boolValue: true
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "8e7e7fe4-55eb-400f-814c-60370dee155e"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 186.80675675675684
+                      y: 182.05743243243251
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "wait"
+                        parameters {
+                          type: IntType
+                          name: "time"
+                          kbSelection: plainValue
+                          intValue: 5
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "eb0a8752-55bc-418d-866d-78d6cd80b479"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 345.59729729729679
+                      y: 204.32770270270248
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "SetEntityBoolean"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "buyDrink"
+                        }
+                        parameters {
+                          type: BoolType
+                          name: "value"
+                          kbSelection: plainValue
+                          boolValue: false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "a364c1a1-b14c-4aff-9978-0cdf5425cc9c"
+          presentation {
+            itemTemplate: "BTSelectorRandom.qml"
+            position {
+              x: -37.030405405404963
+              y: 151.77297297297355
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SelectorNodeRandom
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "165fbbda-9b9f-458f-b46b-886a50450af1"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -36.411486486486865
+                  y: 174.14189189189165
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "tables[0]"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "265e24a7-1fd0-4be4-8016-58a46b1c9631"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 66.490540540540678
+                  y: 166.22635135135124
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "tables[1]"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "2f103f5f-19bc-4e83-99ba-c437939610b4"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 166.82060628196359
+                  y: 164.17976990504258
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "tables[2]"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "df2bb9bf-b06a-453a-9a00-6c7d1444f188"
+          presentation {
+            itemTemplate: "BTSequenceNode.qml"
+            position {
+              x: 273.25878378378366
+              y: 183.43513513513562
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SequenceNode
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "4b7aca1c-5b93-4ab1-8bf4-0ad570c9ab94"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 80.738513513513681
+                  y: 174.14189189189165
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "Increment"
+                    parameters {
+                      type: StringType
+                      name: "key"
+                      kbSelection: plainValue
+                      stringValue: "drink"
+                    }
+                    parameters {
+                      type: IntType
+                      name: "value"
+                      kbSelection: plainValue
+                      intValue: 1
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "faf97d6e-5128-4908-a520-c4e3c66dccc7"
+              presentation {
+                itemTemplate: "BTConditionNode.qml"
+                position {
+                  x: 202.74121621621634
+                  y: 103.56486486486438
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ConditionNodeGeneric
+                  isActivated: true
+                  [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                    operator: Equal
+                    leftOperand {
+                      source: selectLocalKB
+                      key: "drink"
+                    }
+                    rightOperand {
+                      source: selectLocalKB
+                      key: "thresholdDrink"
+                    }
+                  }
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "da3047a5-2190-4be1-a85c-482962dee06f"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 31.558783783783838
+                      y: 170.31283783783829
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "SetEntityBoolean"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "isDrunk"
+                        }
+                        parameters {
+                          type: BoolType
+                          name: "value"
+                          kbSelection: plainValue
+                          boolValue: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "2032a088-bb5c-4632-8098-628a0f77e561"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 521
+              y: 166
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "stall"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

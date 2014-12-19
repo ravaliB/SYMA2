@@ -1,0 +1,275 @@
+version {
+  major: 0
+  minor: 6
+  patch: 0
+}
+entity {
+  prototype: "prototype/Barman.mlent"
+  id: "{7da0ee80-9ac8-4e9e-917e-a53ec70b9bde}"
+  name: "Barman"
+  position {
+    x: -35
+    y: 0
+    z: -38
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Security.mlent"
+  id: "{5ba1edd8-1f1a-47d5-8de5-9777f732bd13}"
+  name: "Secu1"
+  position {
+    x: -15
+    y: 0
+    z: 12
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Security.mlent"
+  id: "{922b5825-e1a6-48c6-876d-440a67af82cf}"
+  name: "Secu2"
+  position {
+    x: -32
+    y: 0
+    z: 10
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{85c0bdb5-f299-432b-8b85-2bb3f12e1198}"
+  name: "Customer1"
+  position {
+    x: 0
+    y: 0
+    z: 20
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{6569402d-9661-4d53-8193-428f5e751ea4}"
+  name: "Customer2"
+  position {
+    x: -20
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{49dc33df-ff37-4aed-b3b6-879dd1c8a1d0}"
+  name: "Customer3"
+  position {
+    x: 10
+    y: 0
+    z: -30
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{454d615d-3bde-471d-8cd0-628283fa9794}"
+  name: "Customer4"
+  position {
+    x: 13
+    y: 0
+    z: -10
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{f48cca9c-3c72-4aa6-a3b8-7976f16a4c09}"
+  name: "Customer5"
+  position {
+    x: -20
+    y: 0
+    z: 10
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{ffcfeb6d-2d8f-4f55-8179-86a67384f10f}"
+  name: "Customer6"
+  position {
+    x: -25
+    y: 0
+    z: 11
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{09b40111-2ca8-4ef5-a4da-602ae9909c62}"
+  name: "Customer7"
+  position {
+    x: 5
+    y: 0
+    z: 15
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{e2de1326-75a2-4125-b5e0-78ea76b27eff}"
+  name: "Customer8"
+  position {
+    x: 15
+    y: 0
+    z: 5
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{46735d47-f89a-4d62-b65a-f2a8b4940992}"
+  name: "Customer9"
+  position {
+    x: 25
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{89477214-ab81-4053-b773-15206f240ebc}"
+  name: "Customer10"
+  position {
+    x: -13
+    y: 0
+    z: -20
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{a39edb3b-3a19-4cc5-9b86-a6e642e24307}"
+  name: "Customer11"
+  position {
+    x: 12
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: false
+}
+entity {
+  prototype: "prototype/Customer.mlent"
+  id: "{f951a49a-bf79-4e41-82e2-fae9b8bba1c8}"
+  name: "Customer12"
+  position {
+    x: 0
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: false
+  useOrientation: false
+}

@@ -1,0 +1,54 @@
+{
+    "version": [
+        1,
+        0,
+        0
+    ]
+}
+{
+    "type": "root",
+    "children": [
+        {
+            "type": "camera",
+            "enable": true,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "Bar_free.mlcam"
+        },
+        {
+            "type": "camera",
+            "enable": false,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "Bar_birds_eye.mlcam"
+        }
+    ]
+}

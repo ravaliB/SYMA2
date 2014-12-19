@@ -1,0 +1,58 @@
+version {
+  major: 1
+  minor: 1
+  patch: 0
+}
+type: "mlv.toolset.launch.sandbox"
+attribute {
+  key: "3dSettings.numberOfPrototypes"
+  value: "1"
+}
+attribute {
+  key: "3dSettings.prototypes[0].color"
+  value: "\"220;170;0;255\""
+}
+attribute {
+  key: "3dSettings.prototypes[0].enabled"
+  value: "true"
+}
+attribute {
+  key: "3dSettings.prototypes[0].mesh"
+  value: "impostor.mesh"
+}
+attribute {
+  key: "3dSettings.prototypes[0].name"
+  value: "\\a default \\a"
+}
+attribute {
+  key: "3dSettings.prototypes[0].orientation"
+  value: "\"0;0;0\""
+}
+attribute {
+  key: "3dSettings.prototypes[0].scale"
+  value: "\"0.35;1.7;0.35\""
+}
+attribute {
+  key: "log_level"
+  value: "2"
+}
+attribute {
+  key: "pause"
+  value: "true"
+}
+attribute {
+  key: "project"
+  value: "FightInBar"
+}
+attribute {
+  key: "scene"
+  value: "scene/Bar.mlscene"
+}
+attribute {
+  key: "simulation"
+  value: "FightInBar.mlsim"
+}
+attribute {
+  key: "version"
+  value: "1"
+}

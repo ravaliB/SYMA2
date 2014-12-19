@@ -1,0 +1,207 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+resource {
+  path: "/default/FightInBar/decision/embedded/buy_drink.mlbt"
+  marker {
+    id: 123
+    type: "mlv.toolset.marker.tracepoint"
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:buy_drink.bt?nodeName=4173e356-232f-4abf-a229-ce43f4097380&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "a drink please"
+    }
+    creation: ""
+  }
+  marker {
+    id: 126
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:buy_drink.bt?nodeName=8e7e7fe4-55eb-400f-814c-60370dee155e&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "thanks"
+    }
+    creation: ""
+  }
+}
+resource {
+  path: "/default/FightInBar/decision/embedded/fight.mlbt"
+  marker {
+    id: 102
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:fight.bt?nodeName=1bcb734e-2b87-4c96-bcc3-9914aef1a775&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "HODOR !"
+    }
+    creation: ""
+  }
+  marker {
+    id: 103
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:fight.bt?nodeName=1cebfd2f-a189-4518-ae27-70d59864d320&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "GNNEOIZOZI !!!"
+    }
+    creation: ""
+  }
+}
+resource {
+  path: "/default/FightInBar/decision/Barman.mlbt"
+  marker {
+    id: 93
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Barman.bt?nodeName=49aca8e2-0251-458f-9a2d-d66373c09630&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "take it !"
+    }
+    creation: ""
+  }
+}
+resource {
+  path: "/default/FightInBar/decision/Security.mlbt"
+  marker {
+    id: 117
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Security.bt?nodeName=d4bfbff1-5de4-4558-8b1f-466f730a3922&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: ""
+    }
+    creation: ""
+  }
+  marker {
+    id: 119
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Security.bt?nodeName=3eb3c065-aac8-4200-998e-b054af5fdabb&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "HALT !!!"
+    }
+    creation: ""
+  }
+}
+resource {
+  path: "/default/FightInBar/decision/Customer.mlbt"
+  marker {
+    id: 112
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Customer.bt?nodeName=eabe3729-0919-44ed-9a82-6a6722f5d4f5&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "PHIILIIIIIPP !"
+    }
+    creation: ""
+  }
+  marker {
+    id: 113
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Customer.bt?nodeName=553431d6-6ab8-4fc1-a8b1-f441ff20047e&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "Je t\'aime mon pote !"
+    }
+    creation: ""
+  }
+  marker {
+    id: 114
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Customer.bt?nodeName=af3cc1ed-3317-4e0e-aca2-60d314448fcf&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "JZZcRoiss QUUee JZZO OFEPOGOPPOEPA"
+    }
+    creation: ""
+  }
+  marker {
+    id: 115
+    index: 0
+    attribute {
+      key: "enabled"
+      value: "true"
+    }
+    attribute {
+      key: "location"
+      value: "\"mlv:Customer.bt?nodeName=5c145956-8e7e-499d-b18e-a5cc54703c12&nodeType=action\""
+    }
+    attribute {
+      key: "message"
+      value: "Des bisoux des BISOUS !!!"
+    }
+    creation: ""
+  }
+}

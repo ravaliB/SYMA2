@@ -1,0 +1,15 @@
+{
+    "version": [
+        1,
+        0,
+        0
+    ]
+}
+{
+    "type": "free",
+    "speedSlow": 1.0,
+    "speedHigh": 100.0,
+    "fov": 60.0,
+    "near": 1.0,
+    "far": 10000.0
+}

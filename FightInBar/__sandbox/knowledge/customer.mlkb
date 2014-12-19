@@ -1,0 +1,85 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "buyDrink"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "drink"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
+  objectValue {
+    key: "hasDrink"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isDrunk"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isFighting"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isMugged"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isNotKO"
+    value {
+      type: Bool
+      boolValue: true
+    }
+  }
+  objectValue {
+    key: "isTalking"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "thresholdDrink"
+    value {
+      type: Int
+      intValue: 5
+    }
+  }
+  objectValue {
+    key: "type"
+    value {
+      type: String
+      stringValue: "client"
+    }
+  }
+  objectValue {
+    key: "wantFight"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+}

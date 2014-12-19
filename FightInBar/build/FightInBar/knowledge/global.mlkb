@@ -1,0 +1,181 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "bar"
+    value {
+      type: Object
+      objectValue {
+        key: "x"
+        value {
+          type: Real
+          realValue: -32
+        }
+      }
+      objectValue {
+        key: "y"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "z"
+        value {
+          type: Real
+          realValue: -32
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "exit"
+    value {
+      type: Object
+      objectValue {
+        key: "x"
+        value {
+          type: Real
+          realValue: 50
+        }
+      }
+      objectValue {
+        key: "y"
+        value {
+          type: Real
+          realValue: 0
+        }
+      }
+      objectValue {
+        key: "z"
+        value {
+          type: Real
+          realValue: 50
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "nbBattle"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
+  objectValue {
+    key: "order"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "posBattle"
+    value {
+      type: Object
+      objectValue {
+        key: "x"
+        value {
+          type: Int
+          intValue: 40
+        }
+      }
+      objectValue {
+        key: "y"
+        value {
+          type: Int
+          intValue: 0
+        }
+      }
+      objectValue {
+        key: "z"
+        value {
+          type: Int
+          intValue: 20
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "tables"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Real
+            realValue: -14
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Real
+            realValue: -30
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Real
+            realValue: -30
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Real
+            realValue: -10
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Real
+            realValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Real
+            realValue: -30
+          }
+        }
+      }
+    }
+  }
+}

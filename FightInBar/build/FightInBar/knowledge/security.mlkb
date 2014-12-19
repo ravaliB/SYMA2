@@ -1,0 +1,22 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "goFight"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "place"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+}

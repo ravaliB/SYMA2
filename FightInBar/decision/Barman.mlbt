@@ -1,0 +1,110 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{7a5fc8c6-7cf3-4e3e-bbaa-6be2290c68ee}"
+name: "Barman"
+description: ""
+children {
+  type: Node
+  name: "fd0b4d93-9563-4267-9b5c-0ebdb5e1d236"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "14fbe528-6576-4649-9bd1-759046a891c8"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5243
+          y: 2593
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "f0a619e3-c1d7-40a8-b8f8-0a2ed9a755a1"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: 1.5
+              y: 158.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: SelectGlobalKB
+                  key: "order"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "49aca8e2-0251-458f-9a2d-d66373c09630"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 2
+                  y: 178
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "wait"
+                    parameters {
+                      type: IntType
+                      name: "time"
+                      kbSelection: plainValue
+                      intValue: 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
